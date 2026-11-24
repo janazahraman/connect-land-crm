@@ -205,7 +205,7 @@ Route::middleware('adminCheck')->group(
 
 
         //All Routes
-        Route::get("logout", [AuthController::class, 'logout'])->name("logout");
+        Route::post("logout", [AuthController::class, 'logout'])->name("logout");
         Route::get('/', function () {
             return redirect()->route('any');
         });

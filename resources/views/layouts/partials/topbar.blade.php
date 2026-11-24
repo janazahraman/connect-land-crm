@@ -63,7 +63,7 @@
                               <div class="dropdown-divider my-1"></div>
 
 
-                              <form method="GET" action="{{ route('logout') }}" x-data>
+                              <form method="POST" action="{{ route('logout') }}" x-data>
                                    @csrf
                                    <button class="dropdown-item text-danger" type="submit">
                                        <iconify-icon icon="solar:logout-3-outline"
