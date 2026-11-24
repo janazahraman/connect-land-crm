@@ -318,7 +318,7 @@
       };
     </script>
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_KEY') }}&callback=initBuildingMap">
+            src="https://maps.googleapis.com/maps/api/js?key={{ config('services.google_maps.key') }}&callback=initBuildingMap">
     </script>
   @endif
 @endsection
